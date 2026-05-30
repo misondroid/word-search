@@ -5,7 +5,7 @@ import './style.css';
 type DictionaryPayload = Record<string, number> | string[];
 
 const DICTIONARY_URL = '/base_dictionary.json';
-const DEFAULT_PATTERN = '^a.*e$';
+const DEFAULT_PATTERN = '^.....$';
 const LANGUAGE_STORAGE_KEY = 'word-search-language';
 const RESULT_PAGE_SIZE = 100;
 

@@ -12,3 +12,15 @@ services:
       - /app/node_modules
     working_dir: /app
     command: npm run dev
+  backend:
+    build:
+      context: .
+      dockerfile: services/backend/Dockerfile
+    ports:
+      - 3001:3001
+    environment:
+      - CLOUDFLARE_ACCOUNT_ID=
+    volumes:
+      - ./code/backend:/app
+      - /app/node_modules
+    working_dir: /app
